@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+{% extends 'web/base.html' %}
+{% load static %}
+<html>
+    <body>
+        {% block content %}
+            <div style="float: left; padding: 10px;">
+                <form action="/search", method="post">
+                    {% csrf_token %}
+                    <div style="float: left; padding: 10px;" class="box">
+                        <input id="search" type="text" name="sea" placeholder="상품을 입력하세요.">
+                    </div>
+
+                    <div style="float: left; padding: 10px;" class="box">
+                        <button type="submit">검색</button>
+                    </div>
+                </form>
+            </div>
+        {% endblock %}
+    </body>
+</html>

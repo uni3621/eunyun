@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+{% extends 'web/base.html' %}
+{% load static %}
+<html>
+    <body>
+        {% block content %}
+            <div style="float: left; padding: 10px; width: 40%;">
+                <div style="float: left; padding: 10px;" class="box">
+                    <p> 상품이 존재하지 않습니다.</p>
+                </div>
+
+                <div class="box">
+                    <form action = "" method="post">
+                        {% csrf_token %}
+                        <button type="button", onclick="javascript:history.go(-1)">뒤로 가기</button>
+                    </form>
+                </div>
+            </div>
+        {% endblock %}
+    </body>
+</html>

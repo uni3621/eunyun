@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+{% extends 'web/base.html' %}
+{% load static %}
+<html>
+    <body>
+        {% block content %}
+            <div style="padding: 10px;">
+                <div style="float: left; padding: 10px;" class="box">
+                    {{product.location}}
+                </div>
+                <div class="box">
+                    <form action = "" method="post">
+                        {% csrf_token %}
+                        <button type="button", onclick="javascript:history.go(-1)">뒤로 가기</button>
+                    </form>
+                </div>
+            </div>
+        {% endblock %}
+    </body>
+</html>

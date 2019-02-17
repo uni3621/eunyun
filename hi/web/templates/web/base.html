@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Mart</title>
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <link href='//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+        <link href="https://fonts.googleapis.com/css?family=Coiny|Gaegu" rel="stylesheet">
+        <link rel="stylesheet" href="{% static 'css/web.css' %}">
+    </head>
+    <body>
+        <div class="page-header">
+            <h1>Happy Mart</h1>
+        </div>
+
+        <div class="search-container">
+            <div class="row">
+                {% block content %}
+                    <!--HTML이 들어갈 수 있는 자리-->
+                {% endblock %}
+            </div>
+        </div>
+    </body>
+</html>

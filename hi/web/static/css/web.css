@@ -1,0 +1,28 @@
+.page-header {
+    background-color: #A9A9A9;
+    margin-top: 0;
+    padding: 20px 20px 20px 40px;
+}
+
+.page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active {
+    color: #FFFFFF;
+    font-size: 36pt;
+    text-decoration: none;
+    font-family: 'Coiny', cursive;
+}
+/*
+h1, h2, h3, h4 {
+    font-family: 'Lobster', cursive;
+}*/
+
+.search-container {
+    padding: 20px 20px 20px 40px;
+    margin-top: 0;
+    font-family: 'Gaegu', cursive;
+}
+
+.box {
+    font-size: 20pt;
+    padding: 10px;
+
+}
